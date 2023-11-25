@@ -8,8 +8,8 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id="a1fad2fe15034d22a01403
                                                redirect_uri="http://localhost:8000",
                                                scope="user-read-playback-state streaming ugc-image-upload playlist-modify-public"))
 
-df1 = pd.read_csv('songRecommender\data\data_moods.csv')
-fp=open(r'C:\Users\urvas\OneDrive\Desktop\Arithemania-2.0\new.txt','r')
+df1 = pd.read_csv('D:\PragyaComputer\Emotify\Emotify-Arithemania\songRecommender\data\data_moods.csv')
+fp=open(r'D:\PragyaComputer\Emotify\Emotify-Arithemania\new.txt','r')
 mood = fp.read()
 fp.close()
 
@@ -29,8 +29,8 @@ playlist = prePlaylists['items'][0]['id']
 print(playlist)
 sp.user_playlist_add_tracks(user=user_id, playlist_id=playlist, tracks=list(list_of_songs))
 print("Created "+mood+" playlist")
-fp=open(r'C:\Users\urvas\OneDrive\Desktop\Arithemania-2.0\new.txt','w')
+fp=open(r'D:\PragyaComputer\Emotify\Emotify-Arithemania\new.txt','w')
 fp.write(playlist)
 fp.close()
 import os
-os.system(r'python C:\Users\urvas\OneDrive\Desktop\Arithemania-2.0\songRecommender\test2.py')
+os.system(r'python D:\PragyaComputer\Emotify\Emotify-Arithemania\songRecommender\test2.py')

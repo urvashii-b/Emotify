@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+body{
+    overflow:hidden;
+    background-color:black;
+}
+
+#myvideo{
+    background-color:black;
+    position: relative;
+    left:0px;
+    bottom: 0;
+    max-width: 80%;
+    max-height: 90%;
+}
+
+#home{
+    position: relative;
+    left:1180px;
+    top:-6px;
+    font-size: 29px;
+    color:lavender;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#abt-us{
+    position: relative;
+    left:1200px;
+    border: 2px solid cyan;
+    border-radius: 10px;
+    top:5px;
+    padding: 1px;
+    padding-left: 6px;
+    padding-right: 6px; 
+    font-size: 22px;
+    font-style: italic;
+    color:lavender;
+}
+
+.logo{
+    color:aliceblue;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    text-decoration: none;
+}
+
+#abt{
+    color:rgb(194, 228, 255);
+    position: fixed;
+    top:300px;
+    right:190px;
+}
+
+#abt2{
+    color:rgb(194, 228, 255);
+    position: absolute;
+    top:380px;
+    font-size: 20px;
+    right:50px;
+}
+
+#abt3{
+    color:rgb(194, 228, 255);
+    position: absolute;
+    top:460px;
+    font-size: 20px;
+    right: 300px; 
+    text-decoration: none;
+    border: 3px solid whitesmoke;  
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+
+#abt4{
+    color:rgb(194, 228, 255);
+    position: absolute;
+    top:520px;
+    font-size: 20px;
+    right: 340px; 
+    text-decoration: none;
+    border: 3px solid whitesmoke;  
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+}

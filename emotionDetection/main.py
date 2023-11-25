@@ -1,6 +1,6 @@
 from keras.models import load_model
 from time import sleep
-from keras_preprocessing.image import img_to_array
+from keras.preprocessing.image import img_to_array
 from keras.preprocessing import image
 import cv2 #OpenCV ---> video is a collection of frames
 import numpy as np
@@ -11,8 +11,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    face_classifier = cv2.CascadeClassifier(r'C:\Users\urvas\OneDrive\Desktop\Arithemania-2.0\emotionDetection\haarcascade_frontalface_default.xml')
-    classifier =load_model(r'C:\Users\urvas\OneDrive\Desktop\Arithemania-2.0\emotionDetection\model.h5')
+    face_classifier = cv2.CascadeClassifier(r'D:\PragyaComputer\Emotify\Emotify-Arithemania\emotionDetection\haarcascade_frontalface_default.xml')
+    classifier =load_model(r'D:\PragyaComputer\Emotify\Emotify-Arithemania\emotionDetection\model.h5')
 
     emotion_labels = ['Angry','Disgust','Fear','Happy','Neutral', 'Sad', 'Surprise']
 
@@ -60,11 +60,11 @@ def index():
         val = 'Calm'
 
     print(val)
-    fp = open(r"C:\Users\urvas\OneDrive\Desktop\Arithemania-2.0\new.txt","w")
+    fp = open(r"D:\PragyaComputer\Emotify\Emotify-Arithemania\new.txt","w")
     fp.write(val)
     fp.close()
     import os
-    os.system(r'python C:\Users\urvas\OneDrive\Desktop\Arithemania-2.0\songRecommender\test.py')
+    os.system(r'python D:\PragyaComputer\Emotify\Emotify-Arithemania\songRecommender\test.py')
     print(max(zip(L.values(),L.keys()))[1])
     cap.release() # stop capturing frames
     cv2.destroyAllWindows()

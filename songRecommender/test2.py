@@ -1,5 +1,5 @@
-fp = open(r"C:\Users\urvas\OneDrive\Desktop\Arithemania-2.0\new.html","w")
-f2 = open(r"C:\Users\urvas\OneDrive\Desktop\Arithemania-2.0\new.txt","r")
+fp = open(r"D:\PragyaComputer\Emotify\Emotify-Arithemania\new.html","w")
+f2 = open(r"D:\PragyaComputer\Emotify\Emotify-Arithemania\new.txt","r")
 p=f2.read()
 f2.close()
 fp.write('''
@@ -12,7 +12,7 @@ fp.write('''
   
     <title>HTML 5 Boilerplate</title>
   </head>
-  <body background="C:/Users/urvas/OneDrive/Desktop/Arithemania-2.0/songRecommender/data/bg.jpg">
+  <body background="D:\PragyaComputer\Emotify\Emotify-Arithemania\songRecommender\data\bg.jpg">
   
 	<script src="index.js"></script>
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/'''+p+'''?utm_source=generator" width="75%" height="500" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" loading="lazy"></iframe>
@@ -23,4 +23,4 @@ fp.write('''
 fp.close()
 
 import os
-os.system(r"C:\Users\urvas\OneDrive\Desktop\Arithemania-2.0\new.html")
+os.system(r"D:\PragyaComputer\Emotify\Emotify-Arithemania\new.html")
