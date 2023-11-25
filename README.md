@@ -2,7 +2,7 @@
 
 Emotify is a unique "Music Recommendation System” that seamlessly integrates emotion detection through facial recognition. The model used in this project achieves an accuracy of approximately 72% on the provided dataset.
 
-![image](https://github.com/urvashii-b/Emotify/assets/130129236/35cd4610-7d35-4cab-8fb8-70bd85724532)
+[![Emotify Prototype Demo](https://img.youtube.com/vi/qTglMz0Ef_w/maxresdefault.jpg)](https://youtu.be/qTglMz0Ef_w)
 
 The system adapts music recommendations from Spotify based on users’ emotions, identified from 7 distinctive moods:
 
@@ -43,14 +43,6 @@ The system adapts music recommendations from Spotify based on users’ emotions,
 2. Navigate to the respective folders for frontend and backend setups.
 
 3. Follow the README files in each folder for specific setup instructions.
-
-## Demo
-
-<video width="640" height="360" controls>
-  <source src=".mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
 
 ## Training Your Own Model
 
